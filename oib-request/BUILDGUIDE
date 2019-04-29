@@ -59,7 +59,7 @@ Build Guide For OpenInfobutton Manager
 Initial Setup
 -------------
 
-1) Clone the entire Infobuttons 2.1 branch. 
+1) Clone the entire InfoButtons 2.3 branch. 
 
 2) Install JDK 8.0, which can be downloaded from 
    http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -92,7 +92,7 @@ WIPE YOUR ENTIRE LOCAL MAVEN REPOSITORY. You WILL encounter build errors if you 
 Building
 --------
 
-1) Execute the following SQL scripts found in the Infobuttons/DeploymentPackage/dbScripts directory IN THE FOLLOWING ORDER:
+1) Execute the following SQL scripts found in the InfoButtons/DeploymentPackage/dbScripts directory IN THE FOLLOWING ORDER:
 
 	1. resource_profile.sql	
 	2. valueset_and_log.sql
@@ -108,7 +108,7 @@ Building
    You may also drop the 3 old valueset tables: concept, subset, and subsetmember but this is not necessary
    and keeping them will not hurt anything which is why I haven't included it in the script.
 
-2) Navigate to the Infobuttons/rest-terminology-services directory and run
+2) Navigate to the InfoButtons/rest-terminology-services directory and run
 	
 	$> mvn clean install -Dmaven.test.skip=true
 
